@@ -1,0 +1,117 @@
+.sidebar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 350px; 
+    height: 100vh;  
+    overflow-y: auto; 
+    background-color: white; 
+    color: black; 
+    padding: 20px; 
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .sidebar .logo img{
+    height: 100px;
+  }
+
+  .sidebar h1 {
+    color: black;
+    margin-bottom: 10px; 
+    font-size: 3.2rem;
+  }
+  .sidebar h2{
+    font-size: 1.8rem;
+    color: white;
+  }
+  .sidebar h3{
+    font-size: 1rem;
+  }
+  .sidebar .border{
+    border-top: 5px solid rgb(247, 247, 0);
+    width: 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .sidebar p{
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+.sidebar .dropdown {
+    position: relative;
+  }
+  
+  .sidebar .dropdown-heading {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer; 
+    background: linear-gradient(90deg, #00ce7c, #4ac1e0);
+    transition: background 0.3s ease; 
+  }
+  
+  .sidebar .dropdown-heading:hover {
+    background: linear-gradient(90deg, #4ac1e0, #00ce7c); 
+  }
+
+  .sidebar .dropdown i{
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.5s ease; 
+  }
+  
+  .sidebar .dropdown.open i {
+    transform: rotate(180deg);
+  }
+  
+  .sidebar .dropdown.open .dropdown-list {
+    display: block;
+    /*transform: scaleY(1);*/
+  }
+  
+
+  .sidebar .dropdown-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    transition: transform 5s ease-in-out; 
+  }
+  
+  .sidebar .dropdown-list li {
+    margin-bottom: 5px;
+    user-select: none;
+    background-color: #323e48;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.sidebar .dropdown-list li:hover{
+    background-color: #182631;
+}
+.sidebar .dropdown-list a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .sidebar .dropdown-list a .text{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .sidebar .dropdown-list a .tag{
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color:#00df86;
+    padding: 2px 20px;
+    border-top-left-radius: 5px;
+    color: black;
+  }
