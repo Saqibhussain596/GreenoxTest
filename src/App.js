@@ -9,10 +9,8 @@ function App() {
     <Router>
       <div className="app">
         <Sidebar />
-
         <div className="content-container">
           <Routes>
-            {/* Add a route for external links */}
             <Route path="/external/:url" element={<ExternalLinkPage />} />
           </Routes>
         </div>
@@ -21,10 +19,9 @@ function App() {
   );
 }
 
-// Create a new component to handle external links
+
 function ExternalLinkPage() {
   const { url } = useParams();
-  
   return <ExternalLink url={decodeURIComponent(url)} />;
 }
 

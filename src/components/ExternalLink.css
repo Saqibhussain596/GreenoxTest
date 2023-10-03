@@ -1,3 +1,87 @@
+
 .external-page{
-   width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #002a3a;
+    background-image: linear-gradient(153deg,#002a3a 28%,#26788f 65%,#4ac1e0);
 }
+.device-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Absolute positioning */
+    left: 0;
+    top: 50%; /* Adjust this value as needed */
+    z-index: 1000;
+    border: 2px solid #00ce7c;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(245, 242, 242);
+    transform: translateY(-50%);
+    border-left: none;
+  }
+.device-tabs .device-icons{
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 5.5rem;
+    color: #00ce7c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.device-tabs .device-icons:hover{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+.device-tabs .device-icons:not(:last-child){
+    border-bottom: 2px solid #00ce7c;;
+}
+
+.mobile-view {
+    width: 320px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .tablet-view {
+    width: 563px;
+    height: 750px;
+    background-color: #fff;
+    border: 2px solid #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+  .desktop-view {
+    height: 100%; 
+    width: 100%;
+  }
+  .frame-container.mobile-view, .frame-container.tablet-view{
+    z-index: 10;
+    background-color: rgba(0,42,58,.2);
+    border: 2px solid #4ac1e0;
+    border-radius: 20px;
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+  .frame-container.mobile-view .device-bar, .frame-container.tablet-view .device-bar{
+    background-color: #4ac1e0;
+    height: 5px;
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .frame-container.tablet-view{
+    width: 590px;
+  }

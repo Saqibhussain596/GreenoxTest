@@ -1,38 +1,33 @@
 [
     {
-      "href": "/external/https%3A%2F%2Fwww.example.com",
+      "href": "/external/https%3A%2F%2Fwww.lizol.co.in%2F",
       "companyName": "Lyzol",
       "tag": "In Screen Expandable"
     },
     {
-      "href": "#",
+      "href": "/external/https%3A%2F%2Fmcdelivery.co.in%2F",
       "companyName": "McDonalds",
       "tag": "In Image"
     },
     {
-      "href": "#",
+      "href": "/external/https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWalmart",
       "companyName": "Wallmart",
       "tag": "In Screen Frame"
     },
     {
-      "href": "#",
+      "href": "/external/https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCurrys",
       "companyName": "Currys",
       "tag": "In Image"
     },
     {
-      "href": "#",
+      "href": "/external/https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCoverGirl",
       "companyName": "COVERGIRL",
       "tag": "In Screen Expandable"
     },
     {
-      "href": "#",
+      "href": "/external/https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWarner_Bros.",
       "companyName": "Warner Bros.",
       "tag": "In Screen"
-    },
-    {
-      "href": "#",
-      "companyName": "TSB",
-      "tag": "In Screen Expandable"
     }
   ]
   

@@ -1,11 +1,4 @@
-.app{
-    display: flex;
-    flex-direction: row;
-}
 .content-container{
-    /*border: 12px solid black;*/
-    /*height: 100vh;*/
-    /*margin: 10px;*/
     width: calc(100vw - 350px);
     position: absolute;
     right: 0;

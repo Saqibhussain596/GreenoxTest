@@ -8,3 +8,6 @@ html{
   font-size: 65%;
   font-family: 'Mulish', sans-serif;
 }
+html::-webkit-scrollbar{
+  display: none;
+}
