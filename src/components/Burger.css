@@ -34,3 +34,66 @@
 .burger:hover .line2{
     width: 65%;
 }
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    cursor: pointer;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10000;
+    font-size: 2rem;
+    padding: 5rem;
+    transition: 0.5s;
+}
+.menu.open{
+    right: 0;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    margin: 5rem 0;
+    font-weight: bold;
+}
+.menu ul li i{
+    position: absolute;
+    right: 10rem;
+    font-weight: bold;
+}
+.menu ul .close-btn{
+    margin-bottom: 5rem;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.733);
+}
+.menu ul .close-btn i{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.menu ul .close-btn:hover i{
+    transform: rotate(90deg);
+}
+.menu .login-btn{
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+    background-image: linear-gradient(90deg,#00ce7c,#4ac1e0);
+    width: fit-content;
+    transition: 0.5s;
+}
+.menu .login-btn:hover{
+    border: 2px solid #00ce7c;
+    background-image: linear-gradient(90deg,#e6ecea,#ffffff);
+    color: #00ce7c;
+}
+.menu .login-btn i{
+    margin-right: 1.5rem;
+}
